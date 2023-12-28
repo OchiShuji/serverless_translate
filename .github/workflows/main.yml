@@ -7,9 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@dev  # リポジトリをチェックアウト
-
       - name: Deploy  # S3にデプロイ 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
