@@ -13,4 +13,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         working-directory: static
         run: |
-          aws s3 sync --region ap-northeast-1 . s3://aws-handson-edge-delivery-20231214 --delete
+          aws s3 sync --region ap-northeast-1 ./* s3://aws-handson-edge-delivery-20231214 --delete
