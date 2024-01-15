@@ -16,4 +16,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           ls -la .
-          aws s3 sync --region ap-northeast-1 ./ s3://aws-handson-edge-delivery-20231214 --delete --exclude .gitignore --exclude .git/* --exclude .github/*
+          aws s3 sync --region ap-northeast-1 ./ s3://aws-handson-edge-delivery-20231214 --delete --exclude ".gitignore" --exclude ".git/*" --exclude ".github/*"
